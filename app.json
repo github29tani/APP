@@ -1,13 +1,45 @@
 {
   "expo": {
+    "name": "Digital Pen Studio",
+    "slug": "digital-pen-studio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pdlebhaii.digitalpen"
+    },
+    "android": {
+      "package": "com.pdlebhaii.digitalpen",
+      "versionCode": 1,
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "buildToolsVersion": "34.0.0",
+      "permissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
     "extra": {
       "eas": {
         "projectId": "9cd7a5e9-da55-47cf-b3dd-2f559b785b8a"
       }
-    },
-    "android": {
-      "package": "com.saazz.pdlebhaii"
-    },
-    "slug": "pdlebhaii"
+    }
   }
 }
